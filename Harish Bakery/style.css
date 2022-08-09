@@ -1,0 +1,236 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	/*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(background.jpg);
+	background-size: cover;
+*/
+	
+}
+
+.menu-bar
+{
+	padding: 14;
+	background-color: #ffff;
+	text-align: center;
+	
+	margin-top: 0;
+	width: 100%;
+	overflow: hidden;
+	font-family: 'Federo', sans-serif;
+
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+}
+
+.menu-bar ul li
+{
+	width: 180px;
+	margin: 5px;
+	padding: 10px;
+	border-right: 1px solid #b55245;
+}
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: #232323;
+	transition: 1s ease;
+}
+
+.active, .menu-bar ul li:hover
+{
+	
+	background-color: #D17F76;
+	border-radius: 3px;
+	border-style: unset;
+	
+}
+
+.menu-bar .fa
+{
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.logo
+{
+	position: absolute;
+	
+}
+
+
+.title
+{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title
+{
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Limelight', cursive;
+	font-variant: small-caps;
+	text-shadow: 2px 2px #B4AEAE;
+	text-decoration: underline overline;
+}
+
+.para
+{
+	
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 35;
+	font-family: 'Felipa', cursive;
+	overflow: hidden;
+	animation: type 3s;
+	white-space: nowrap;
+
+	
+}
+
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 22.25ch;
+	}
+}
+
+/*.title:hover{
+	color: #D98880 ;
+}
+*/
+footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: #222;
+}
+
+.column{
+	float: left;
+}
+
+h2{
+	display: inline-flex;
+}
+
+.about{
+	width: 30%;
+}
+
+.menu{
+	width: 30%;
+}
+
+.contact{
+	width: 40%;
+}
+
+.footerpara{
+	font-size: 15px;
+}
+
+.footerheadings{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: absolute;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  background-size: cover;
+  top: 0;
+}
+
+/* The dots/bullets/indicators *//*
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

@@ -1,0 +1,338 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.menu-bar
+{
+  padding: 14;
+  background-color: #ffff;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  overflow: auto;
+  font-family: 'Federo', sans-serif;
+
+}
+
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li
+{
+  width: 180px;
+  margin: 5px;
+  padding: 10px;
+  border-right: 1px solid #b55245;
+}
+
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: 1s ease;
+}
+
+.active, .menu-bar ul li:hover
+{
+  
+  background-color: #D17F76;
+  border-radius: 3px;
+  border-style: unset;
+  
+}
+
+.menu-bar .fa
+{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.logo
+{
+	position: absolute;
+	
+}
+
+.banner_area {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(Images/header20.jpg);
+  
+  
+}
+
+.banner_text {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.banner_text h3 {
+  color: #fff;
+  padding-top: 120px;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  text-shadow: 2px 2px #B4AEAE;
+
+  font-size: 62px;
+}
+
+hr.hr{
+  border-top: 1px solid brown;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.column1{
+  float: left;
+  padding: 25px;
+  height: 250px;
+  background-color: #E4F4BB;
+
+}
+
+.about1{
+  width: 60%;
+  margin-left: 7%;
+  border-left: 6px solid #909B75;
+}
+
+.about1Image{
+  
+  border-bottom-right-radius: 20px;
+}
+
+img{
+  border-bottom-right-radius: 10px;
+}
+
+.para{
+	text-indent: 30%;
+	text-align: center;
+	margin-top: 60px;
+	font-family: 'Allura', cursive;
+	font-size: 25px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2{
+  float: left;
+  padding: 25px;
+  height: 250px;
+  background-color: #BEF0F8;
+
+
+}
+
+.about2{
+  width: 60%;
+  margin-left: 7%;
+  border-left: 6px solid #75969B;
+}
+
+.about2Image{
+  border-bottom-right-radius: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column3{
+  float: left;
+  padding: 25px;
+  height: 250px;
+  background-color: #E2CEFE;
+
+
+}
+
+.about3{
+  width: 60%;
+  margin-left: 7%;
+  border-left: 6px solid #867999;
+}
+
+.about3Image{
+  border-bottom-right-radius: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+	bottom: 0px;
+	width: 100%;
+	background-color: #F0EBD6;
+	color: #C4572B;
+	
+	padding: 30px 50px;
+}
+
+.vl {
+  border-left: 3px dotted #441402;
+  height: 250px;
+  float: right;
+  position: relative;
+  padding-left: 2px;
+  padding-right: 25px;
+}
+
+.column{
+	float: left;
+	margin-top: 10px;
+}
+
+h2.footer-main-heading{
+	display: inline-flex;
+	border-bottom: 2px solid #67240A;
+	font-size: 20px;
+	text-align: center;
+	color: brown;
+	font-family: 'David Libre', serif;
+
+}
+
+.about{
+	width: 38%;
+	text-align: left;
+}
+
+.menu{
+	width: 33%;
+	text-align: left;
+}
+
+.contact{
+	width: 15%;
+	text-align: left;
+}
+
+.time{
+	width: 14%;
+	text-align: left;
+	padding: 50px 20px;
+}
+
+
+.footerpara{
+	font-size: 17px;
+	font-weight: lighter;
+	font-family: 'Tinos', serif;
+}
+
+.footerheadings{
+	font-size: 18px;
+	font-family: 'Tinos', serif;
+	font-weight: bold;
+}
+
+.arrow-btn{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+.arrow-btn a{
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	background-color: #441402;
+	display: block;
+	border-radius: 5px;
+	border-color: #F0EBD6;
+}
+
+.arrow-btn a i{
+	color: #F0EBD6;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.arrow-btn:hover a{
+	background-color: #F0EBD6;
+	border-color: #441402;
+}
+
+.arrow-btn:hover a i{
+	color: #441402;
+	font-weight: bold;
+}
+
+.btn-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+button {
+  cursor: pointer;
+
+ }
+
+.abt-btn{
+	padding: 14px 28px;
+	border-radius: 5px;
+	background-color: #441402;
+	border-color: #F0EBD6;
+
+}
+
+.abt-btn a{
+	text-decoration: none;
+	color: #F0EBD6;
+	font-family: 'David Libre', serif;
+}
+
+.abt-btn:hover{
+	background-color: #F0EBD6;
+	border-color: #441402;
+}
+
+.abt-btn:hover a{
+	color: #441402;
+	font-weight: bold;
+}
+
+.menu-btn{
+	padding: 14px 28px;
+	border-radius: 5px;
+	background-color: #441402;
+	border-color: #F0EBD6;
+
+}
+
+.menu-btn a{
+	text-decoration: none;
+	color: #F0EBD6;
+	font-family: 'David Libre', serif;
+}
+
+.menu-btn:hover{
+	background-color: #F0EBD6;
+	border-color: #441402;
+}
+
+.menu-btn:hover a{
+	color: #441402;
+	font-weight: bold;
+}
+

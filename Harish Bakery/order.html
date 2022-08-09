@@ -1,0 +1,252 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Federo&family=David+Libre:wght@500&family=Lobster&display=swap&family=Acme&family=Josefin+Sans:wght@600&family=Tinos:ital@1&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>	
+<body>
+	<button class="arrow-btn" onclick="topFunction()" id="myBtn"><a href=#><i class="fa fa-chevron-up"></i></a></button>
+
+
+	<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+		<div class="logo">
+			<img src="Images/logo.png" width="102px">
+	
+		</div> 
+
+		<div class="menu-bar">
+			<ul>
+				<li><a href="index.html"><i class="fa fa-home"></i>  HOME</a></li>
+				<li><a href="menu.html"><i class="fa fa-bars"></i>   MENU</a></li>	
+				<li class="active"><a href="order.html"><i class="fa fa-birthday-cake"></i>   CAKE ORDER</a></li>
+				<li><a href="contact.html"><i class="fa fa-phone"></i>   CONTACT</a></li>
+				<li><a href="about.html"><i class="fa fa-user"></i>  ABOUT US</a></li>	
+	    	</ul>
+		</div>
+	
+<section class="banner_area">
+        	<div class="container">
+        		<div class="banner_text">
+        			<h3>Cake Order</h3>
+      
+        		</div>
+        	</div>
+        </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        	<hr class="hr">
+        <br><br><br><br><br>
+
+
+<marquee class="marquee" behavior="scroll" direction="left" scrollamount="20">Order birthday cakes, wedding cakes, anniversary cakes, etc... at the finest quality to make your special day even more special!!</marquee>
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+       <div class="heading">
+       	<h2>Please fill out the below form to order a customised cake</h2>
+       </div> 
+<br><br><br><br><br>
+       <form action="register.php" method="POST">
+<fieldset class="border">
+       	<fieldset>
+       		<legend class="customer-details">Customer Details</legend>
+       		<br><br>
+       		<label class="input-font" for="name">Customer's Name*</label>
+					<input class="input-font" type="text" name="name" size="30" placeholder="Enter your Name" required="">
+			<br><br>		
+			<label class="input-font" for="email">Email</label>
+					<input class="input-font" type="text" name="email" size="40" placeholder="Enter your Email Address">
+			<label class="input-font" for="phone">Phone Number*</label>
+					<input class="input-font" type="tel" name="phone" size="30" placeholder="Enter your Phone Number" required="">
+					<br><br><br>
+		</fieldset>			
+			<br><br><br><br><br>	
+		<fieldset>	
+			<legend class="order-details">Order Details</legend>
+			<br><br>
+			<section class="input-font">		
+			<label class="input-font" for="type">Type of Order*</label>
+					<input type="radio" name="type" id="delivery" value="Delivery"/> Delivery
+					<input type="radio" name="type" id="delivery" value="Pick-up"/> Pick-up
+			</section>
+			<br><br>
+			<h5 class="input-font">(Delivery is made only to the addresses within Virudhunagar)</h5>
+			<br>
+			<label class="input-font" for="address">Delivery Address*</label>
+			<textarea class="input-font" rows="3" cols="45" name="address" id="address" placeholder="Enter your Street Name" required="" disabled="disabled"></textarea>
+			<br><br>
+			<label class="input-font" for="landmark">Landmark</label>
+				<input class="input-font" type="text" name="landmark" id="landmark" size="25" placeholder="Enter any Landmark" disabled="disabled">
+<br><br>
+			<label class="input-font" for="date-time">Pick-up/Delivery Date & Time*</label>
+				<input class="input-font" type="datetime-local" name="datetime" placeholder="" required="">	
+				<br><br><br>
+</fieldset>
+<br><br><br><br><br>	
+<fieldset>
+	<legend class="cake-details">Cake Details</legend>
+	<br><br>
+	<label class="input-font" for="cake-weight">Cake Weight*</label>
+	<select class="input-font" name="cakeweight" required="">
+						<option>---Select the cake weight---</option>
+						<option value="500g">500g</option>
+						<option value="1kg">1kg</option>
+						<option value="1.5kg">1.5kg</option>
+						<option value="2kg">2kg</option>
+						<option value="2.5kg">2.5kg</option>
+						<option value="3kg">3kg</option>
+						<option value="1.5kg">3.5kg</option>
+						<option value="2kg">4kg</option>
+						<option value="2.5kg">4.5kg</option>
+						<option value="3kg">5kg</option>
+	</select>	
+	
+	<label class="input-font" for="cake-shape">Cake Shape*</label>
+	<select class="input-font" name="cakeshape" required="">
+						<option>---Select the cake shape---</option>
+						<option value="Square">Square</option>
+						<option value="Rectangle">Rectangle</option>
+						<option value="Circle">Circle</option>
+						<option value="Heart">Heart</option>
+						<option value="Special">Special</option>
+	</select>	
+	<br><br>
+<label class="input-font" for="cake-type">Cake Type*</label>
+	<select onchange="changetextbox();" class="input-font" name="caketype" id="cake-type" required="">
+						<option>---Select the cake type---</option>
+						<option value="Sponge Cake">Sponge Cake</option>
+						<option value="Plum Cake">Plum Cake</option>
+						<optgroup label="Freshcream Cake">
+							<option value="Black Forest">Black Forest</option>
+							<option value="White Forest">White Forest</option>
+							<option value="Pineapple">Pineapple</option>
+							<option value="Strawberry">Strawberry</option>
+						</optgroup>
+	</select>	
+
+	<label class="input-font" for="cake-frosting">Cake Frosting*</label>
+	<select class="input-font" name="cake-frosting" id="cakefrosting" required="">
+						<option>---Select the cake frosting---</option>
+						<option value="Strawberry">Strawberry</option>
+						<option value="Chocolate">Chocolate</option>
+	</select>	
+	<br><br>
+
+
+	<br><br>
+
+	<label class="input-font" for="shape">Cake Message</label>
+	<textarea class="input-font" rows="3" cols="45" name="message" placeholder="Enter the message to be written on the cake"></textarea>
+	<br><br>
+</fieldset>	
+		<center>
+		<button class="btn-submit" name="submit" type="submit">SUBMIT</button>
+		<button class="btn-reset" name="reset" input type="reset">RESET</button>
+		</center>
+</fieldset>
+
+       </form>	
+       <br><br><br><br><br>
+<script type="text/javascript">
+	$(function() {
+		$('input[name="type"]').click(function() {
+			if ($("#delivery").is(":checked")){
+				
+				$("#landmark").removeAttr("disabled");
+				$("#address").removeAttr("disabled");
+				
+				$("#landmark").focus();
+				$("#address").focus();
+			}
+			else {
+				$("#address").attr("disabled", "disabled");
+				$("#landmark").attr("disabled", "disabled");
+			}
+		});
+	});
+
+	function changetextbox()
+	{
+	    if (document.getElementById("cake-type").value === "Sponge Cake") {
+	        document.getElementById("cake-frosting").disabled='';
+	    } else {
+	        document.getElementById("cake-frosting").disabled='true';
+	    }
+	}
+</script>
+</body>
+<footer>
+  	<div class="row">
+  		<div class="column about">
+  			<div class="vl"></div>
+  			<h2 class="footer-main-heading">About Us</h2>
+  			<br><br>
+  				<p class="footerpara">We are dedicated bakers devoted to our job. As we take pride in what we do, we invariably keep ourselves updated to the trends.<br><br>
+  				Join us and give yourself a treat you deserve. We swear you won't regret it.</p>
+  				<div class="btn-container">
+  				<button class="abt-btn"><a href=about.html>Read More</a></button>
+  				</div>
+  				
+  			
+  		
+  		</div>
+  		
+  		
+  		<div class="column menu">
+  			<div class="vl"></div>
+  			<h2 class="footer-main-heading">Our Menu</h2>
+  			<br><br>
+  			<p class="footerpara">We have varieties of products from sweet to savory to match unique tastes of different people.<br><br>
+  			Check out our menu here</p>
+  			<div class="btn-container">
+  				<button class="menu-btn"><a href=menu.html>Our Menu</a></button>
+  				</div>
+  				
+  		</div>
+
+  		<div class="column contact">
+  			<h2 class="footer-main-heading">Contact Us</h2>
+  			<br><br>
+  			<h1 class="footerheadings"><i class="fa fa-map-marker"></i>   Address : </h1>
+				<p class="footerpara">51, Alagarsamy Street, <br>Virudhunagar - 626 001 <br>Tamil Nadu, India</p>
+			<br>
+			<h1 class="footerheadings"><i class="fa fa-mobile"></i>   Mobile : </h1>
+			<p class="footerpara"><a href="tel:9442802772"> 9442802772</a></p><br>
+			<h1 class="footerheadings"><i class="fa fa-envelope"></i>   Email : </h1>
+			<p class="footerpara"><a href="mailto:harishbakeryvnr@gmail.com">harishbakeryvnr@gmail.com</p></a>
+			<br>
+			
+  		</div>
+  		<div class="column time">
+  			<h1 class="footerheadings"><i class="fa fa-clock-o"></i>   Opening Hours : </h1>
+       			<p class="footerpara">9:00 AM – 9:00 PM</p>
+       			<p class="footerpara">Monday – Saturday</p>
+  		</div>	
+  	</div>
+  </footer>
+
+</html>

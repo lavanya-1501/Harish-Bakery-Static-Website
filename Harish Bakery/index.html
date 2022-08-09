@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Federo&family=Felipa&family=David+Libre:wght@500&family=Limelight&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header">
+		<div class="logo">
+				<img src="Images/logo.png" width="102px">
+		</div> 
+		<div class="menu-bar">
+			<ul>
+				<li class="active"><a href="#"><i class="fa fa-home"></i>  HOME</a></li>
+				<li><a href="menu.html"><i class="fa fa-bars"></i>   MENU</a></li>	
+				<li><a href="order.html"><i class="fa fa-birthday-cake"></i>   CAKE ORDER</a></li>
+				<li><a href="contact.html"><i class="fa fa-phone"></i>   CONTACT</a></li>
+				<li><a href="about.html"><i class="fa fa-user"></i>  ABOUT US</a></li>	
+	    	</ul>
+		</div>
+	
+		
+    	
+    </div>
+
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Images/1.jpg" style="width:151.9%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/2.jpg" style="width:151.9%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/3.jpg" style="width:151.9%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/4.jpg" style="width:151.9%">
+</div>
+
+</div>
+<br>
+
+
+<div class="title">
+			<h1>Harish Bakery</h1>
+    	</div>
+  
+    	<div class="para">
+    		<p>Come over for the taste of happiness</p>
+    	</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  //var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";  
+  
+  setTimeout(showSlides, 7000);
+}
+</script>
+
+
+
+
+
+
+   </body>
+ 
+ 	
+</html>
